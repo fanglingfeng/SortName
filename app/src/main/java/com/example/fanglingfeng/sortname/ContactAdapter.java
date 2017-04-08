@@ -59,7 +59,7 @@ public class ContactAdapter extends BaseAdapter implements SectionIndexer {
         }
         ContactInfo contactInfo = mContactInfos.get(i);
         int section = getSectionForPosition(i);
-        int startPostion = getSectionForPosition(section);
+        int startPostion = getPositionForSection(section);
         if (i == startPostion) {
             holder.title.setVisibility(View.VISIBLE);
         } else {
@@ -67,7 +67,7 @@ public class ContactAdapter extends BaseAdapter implements SectionIndexer {
         }
         holder.name.setText(contactInfo.getRawName());
 
-        return null;
+        return view;
     }
 
     @Override

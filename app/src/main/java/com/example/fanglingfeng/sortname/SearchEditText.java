@@ -36,7 +36,7 @@ public class SearchEditText extends android.support.v7.widget.AppCompatEditText 
         int height = (int) (intrinsicHeight*0.8f);
         searchDrawable.setBounds(0,0,width,height);
         deleteDrawable = getCompoundDrawables()[2];
-        if (deleteDrawable != null) {
+        if (deleteDrawable == null) {
             deleteDrawable = ContextCompat.getDrawable(getContext(),R.mipmap.delete);
 
         }
