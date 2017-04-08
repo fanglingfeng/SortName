@@ -61,6 +61,7 @@ public class ContactAdapter extends BaseAdapter implements SectionIndexer {
         int section = getSectionForPosition(i);
         int startPostion = getPositionForSection(section);
         if (i == startPostion) {
+            holder.title.setText((char)section+"");
             holder.title.setVisibility(View.VISIBLE);
         } else {
             holder.title.setVisibility(View.GONE);

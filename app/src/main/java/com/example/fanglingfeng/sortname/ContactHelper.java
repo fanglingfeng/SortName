@@ -69,6 +69,7 @@ public class ContactHelper {
             contactInfo.setSortLetter(sortLetter);
             contactInfos.add(contactInfo);
         }
+        Collections.sort(contactInfos);
         return contactInfos;
     }
 
