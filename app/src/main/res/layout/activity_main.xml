@@ -1,20 +1,64 @@
 <?xml version="1.0" encoding="utf-8"?>
-<android.support.constraint.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
     xmlns:app="http://schemas.android.com/apk/res-auto"
     xmlns:tools="http://schemas.android.com/tools"
+              android:orientation="vertical"
     android:layout_width="match_parent"
     android:layout_height="match_parent"
     tools:context="com.example.fanglingfeng.sortname.MainActivity"
     >
+<RelativeLayout android:layout_width="match_parent" android:layout_height="48dp">
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="@string/app_name"
+        android:layout_centerInParent="true"
+        android:textSize="16sp"
+        android:textColor="@color/colorOrangeRed"
 
-  <TextView
-      android:layout_width="wrap_content"
-      android:layout_height="wrap_content"
-      android:text="Hello World!"
-      app:layout_constraintBottom_toBottomOf="parent"
-      app:layout_constraintLeft_toLeftOf="parent"
-      app:layout_constraintRight_toRightOf="parent"
-      app:layout_constraintTop_toTopOf="parent"
-      />
+    />
+</RelativeLayout>
+    <com.example.fanglingfeng.sortname.SearchEditText
+        android:id="@+id/et_contacts_search"
+        android:layout_width="match_parent"
+        android:layout_height="40dp"
+        android:drawablePadding="12dp"
+        android:hint="@string/text_hint_search"
+        android:maxLines="1"
+        android:paddingLeft="12dp"
+        android:paddingRight="12dp"
+        android:textSize="14sp" />
 
-</android.support.constraint.ConstraintLayout>
+    <FrameLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent">
+
+        <ListView
+            android:id="@+id/lv_contacts"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:layout_gravity="center"
+            android:divider="@null"
+            android:scrollbars="none" />
+
+        <TextView
+            android:id="@+id/tv_letter_dialog"
+            android:layout_width="70dp"
+            android:layout_height="70dp"
+            android:layout_gravity="center"
+            android:background="@drawable/bg_letter_dialog"
+            android:gravity="center"
+            android:text=""
+            android:textColor="@color/colorWhite"
+            android:textSize="36sp"
+            android:visibility="gone"
+            tools:visibility="visible" />
+
+        <com.example.fanglingfeng.sortname.IndexSideView
+            android:id="@+id/sb_index_letter"
+            android:layout_width="24dp"
+            android:layout_height="match_parent"
+            android:layout_gravity="end|center" />
+    </FrameLayout>
+
+</LinearLayout>

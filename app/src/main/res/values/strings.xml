@@ -1,3 +1,4 @@
 <resources>
   <string name="app_name">SortName</string>
+  <string name="text_hint_search">搜索</string>
 </resources>

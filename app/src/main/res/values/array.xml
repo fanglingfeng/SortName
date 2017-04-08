@@ -1,0 +1,20 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <array name="names">
+        <item>黄记煌</item>
+        <item>大白鲨</item>
+        <item>武器大师</item>
+        <item>提莫队长</item>
+        <item>莫甘娜</item>
+        <item>蕾欧诺</item>
+        <item>布兰德</item>
+        <item>加勒比</item>
+        <item>李青</item>
+        <item>孙悟空</item>
+        <item>猪八戒</item>
+        <item>唐三藏</item>
+        <item>沙和尚</item>
+        <item>李白</item>
+        <item>鲁班大师</item>
+    </array>
+</resources>

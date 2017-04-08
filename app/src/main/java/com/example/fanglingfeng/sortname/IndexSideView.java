@@ -86,7 +86,7 @@ public class IndexSideView extends View {
             if (tempIndex != oldIndex && tempIndex < size&&tempIndex>=0) {
                 currentLetterIndex = tempIndex;
                 if (onTouchLetterListener != null) {
-                    onTouchLetterListener.onTouchingLetter();
+                    onTouchLetterListener.onTouchingLetter(mLetterIndexList.get(tempIndex));
                 }
                 invalidate();
             }
@@ -95,7 +95,7 @@ public class IndexSideView extends View {
     }
     public interface OnTouchLetterListener{
         void onTouchedLetter();
-        void onTouchingLetter();
+        void onTouchingLetter(String letter);
     }
     public void setOnTouchLetterListener(OnTouchLetterListener onTouchLetterListener){
         this.onTouchLetterListener = onTouchLetterListener;
